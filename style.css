@@ -1,0 +1,442 @@
+
+html, body {
+	background-color: #111111;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*********** SIDEBAR ************/
+/* Source: https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp */
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+}
+
+#btn {
+	position: fixed;
+	text-align: left;
+	background-color: rgb(0,0,0,0.6);
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+/******** Block elements **********/
+
+header {
+	display: block;
+	text-align: center;
+	color: black;
+	background-image: url("images/solarpanel1.jpeg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	margin: 0px;
+	padding: 0px;
+    padding-bottom: 40px;
+	width: 100%;
+	min-height: 500px;
+	max-height: 100px;
+}
+
+div.header {	
+	display: block;
+    width: 100%;
+    margin-left: 0;
+    max-height: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	background-color: #ffa503a6;
+}
+
+h1 {
+	margin-top: 0px;
+}
+
+h2 {
+	color: orange;
+	padding-bottom: 15px;
+	margin-top: 15px;
+	text-align: left;
+}
+
+h2.line {
+	border-bottom-style: solid;
+	border-bottom-color: #6b5429;
+	border-bottom-width: thin;
+	width: 100%;
+}
+
+h2.line-half {
+	width: 50%;
+}
+
+h2.gallery {
+	margin-top: 60px;
+}
+
+h3.sections {
+	color: orange;
+	text-align: left;
+	margin-bottom: 16px;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+h3.infoWin {
+	color: #0f364a;
+    font-size: 20px;
+	text-align: center;
+}
+
+h3.subtitle {
+	color: black;
+    	font-weight: normal;
+	text-align: center;
+}
+
+h3.pros {
+	margin-top: 0px;
+}
+
+p {
+	color: #f8f1d2e0;
+	line-height: 1.5;
+	font-size: 16px;
+	text-align: left;
+}
+
+p.infoWin {
+	color: #0f364a;
+	width: 300px;
+	text-align: center;
+}
+
+p.footer {
+	text-align: center;
+}
+
+a {
+	color: #d89194d9;
+	text-decoration: none;	
+}
+
+section {
+	padding-top: 50px;
+	padding-bottom: 30px;
+	padding-left: 10%;
+	padding-right: 10%;
+	height: 100%;
+}
+
+.bg-color {
+	background-color: #26231d;
+}
+
+div.about {
+	padding-left: 50px;
+	margin-left: 50px;
+	border-width: 0px 0px 0px 2px;
+	border-style: solid;
+	border-color: #e1abab;
+}
+
+div.pros {
+	margin-top: 20px;
+}
+
+div.cons {
+	margin-top: 20px;
+	padding-left: 30px;
+}
+
+div.snapshot {
+	padding: 20px;
+}
+
+div.iframe {
+	margin-bottom: 30px;
+	margin-top:30px;
+}
+
+div.tips-img {
+	margin-bottom: 30px;
+}
+div.tips-txt {
+	padding-right: 20px;
+}
+
+/********* SNAPSHOTS *******/
+/*********** Adapted from https://www.w3schools.com/howto/howto_css_image_overlay.asp ***************/
+
+.container-snapshot-txt {
+  position: relative;
+  width: 50%;
+}
+
+.image-snapshot {
+  display: block;
+  width: 100%;
+}
+
+.overlay-snapshot-txt {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container-snapshot-txt:hover .overlay-snapshot-txt {
+  opacity: 0.8;
+}
+
+.snapshot-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/********* GALLERY **********/
+/***adapted from: https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery_responsive ***/
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color: #f8f1d2e0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/********* FOOTER **********/
+
+footer {
+  width: 100%;
+  float: left;
+  padding: 0;
+  color: white;
+}
+
+.foot-right {
+	display: block;
+	float: center;
+	text-align: right;
+	font-size: 14px;
+	padding-right: 14px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.foot-center {
+	display: block;
+	float: center;
+	text-align: center;
+	font-size: 12px;
+	padding-left: 12px;
+}
+
+.foot-line {
+	display: inline;
+	padding-right: 5px;
+}
+
+.foot-contactme {
+	font-size: 16px;
+}
+
+/********* Social Media Icons **********/
+/*https://www.w3schools.com/howto/howto_css_social_media_buttons.asp*/
+
+/* Style all font awesome icons */
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* linkedin */
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  border-radius: 20%;
+}
+
+/********* Columns *********/
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/********* For large screens *********/
+
+@media only screen and (min-width: 800px) {
+	
+
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+	
+}
+
+/********* For small screens *********/
+
+
+@media only screen and (max-width: 800px) {
+	
+
+	div.about {
+		padding: 0px;
+		margin: 0px;
+		border: none;
+	}
+
+	div.final-right {
+		padding-left: 0px;
+	}
+	div.tips-img {
+		margin-top: 30px;
+	}
+	div.tips-txt {
+		padding-right: 0px;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+
+	div.aboutus {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}

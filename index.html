@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rooftop Solar Potential</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+  
+	<div id="mySidebar" class="sidebar">
+	    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="images/ex2.png" alt="close" height="20px" width="20px"></a>
+	    <a href="#Problem">Problem</a>
+	    <a href="#Process">Experience Builder</a>
+	    <a href="#Tips">Tips & Tricks</a>
+	    <a href="#Final">Solution</a>
+	</div>
+
+	<div id="main">
+		<div id="btn">
+			<button class="openbtn" onclick="openNav()"><img src="images/ham5.png" alt="open" height="20px" width="20px"></button> 	
+		</div>
+		
+		<header>
+			<div class="header">
+				<h1>Rooftop Solar Potential Application</h1>
+				<h3 class="subtitle">Fleming GIS Collab Project | 2021</h3>
+			</div>
+		</header>
+		
+		<section class="col-12" id="Problem">
+		  <div class="col-12">
+			<h2 class="line">Welcome to our project website!</h2>
+			<div>
+			<p><b>What's this all about?</b> In collaboration with the City of Peterborough, we built an interactive web map that shows solar potential of building rooftops in Peterborough so that public and private property owners can determine if solar panel installations are a viable solution for their buildings. 
+			</p>
+			<p><b>Why is this application relevant?</b> This application stands out from other solar potential maps by providing localised estimates of solar radiation produced from high resolution lidar data and local weather patterns and conditions. It is an accessible and easy to use application that will help encourage the use of rooftop solar panels in the city.
+			</p>
+			</div>
+		  </div>
+		  <div class="col-3">
+		   <div class="about">
+
+		   </div>
+		  </div>		  
+		</section>
+		
+		<section id="Tips" class="col-12 bg-color">
+		 <h2 class="line">Meet the Team!</h2>
+	     <div class="col-12">
+		  <div class="col-6 tips-img ">
+			<img src="images/sam.png" alt="Samir Imamovic" width="300px" height="300px">
+		  </div>
+		  <div class="col-6 tips-txt"> 
+			<h3 class="sections">Samir Imamovic</h3>
+			<p>Sam is a recent graduate of the University of Toronto specializing in ecology and evolutionary biology.  Through his educational experience he has gained skills in data management and analysis and report writing. Additionally, his current enrollment in the Fleming college GIS specialist program has taught him how to perform and display results of analysis on spatial data. </p>
+		  </div>
+		 </div>
+		 <div class="col-12">
+		  <div class="col-6 tips-img ">
+			<img src="images/marissa.png" alt="Marissa Powell" width="300px" height="300px">
+		  </div>	
+		  <div class="col-6 tips-txt"> 
+			<h3 class="sections">Marissa Powell</h3>
+			<p>Marissa is a former teacher who specialized in elementary instruction and museum education. She is in the application specialist stream of Fleming College’s GIS program, with a personal interest in imagery analysis. Marissa has a wide area of experience and can adapt and complete a variety of tasks. In her experience with the Fleming College, and her former career, Marissa brings a wealth of information regarding community engagement and GIS knowledge.  </p>
+		  </div>
+		 </div>
+		 <div class="col-12">
+		  <div class="col-6 tips-img ">
+			<img src="images/andrea.png" alt="Andrea Reid" width="300px" height="300px">
+		  </div>
+		  <div class="col-6 tips-txt"> 
+			<h3 class="sections">Andrea Reid</h3>
+			<p>Andrea is an ecologist with experience in biodiversity research and conservation genetics. She has spent a lot of time working 'on the ground' in many different environments across three different continents. Now, equipped with a new skillset acquired from the GIS Applications Specialist program at Fleming College, she is excited to be able to use state of the art GIS technology to explore the world from above!</p>
+		  </div>		  
+		 </div>
+		</section>
+		
+		<section class="col-12" id="Process">
+			<h2 class="line">Solar Potential Layer</h2>
+			<p>Modeling solar potential of city rooftops with relatively high accuracy was possible due to the availability of high resolution lidar point data provided by the City of Peterborough. The lidar data allowed us to create a detailed Digital Surface Model (DSM) for modeling the influence of rooftop structures and nearby obstructions on the total amount of solar radiation received by a building. </p>
+			
+			<p>The resulting solar layer is displayed below, symbolised at Usable Solar Radiation and Electricity Production per year. As expected, the large (and often taller), flat-roofed buildings characteristic of the central downtown area show some of the highest potentials. There is also a trend toward higher solar radiation on the periphery neighbourhoods of the city. These neighbourhoods are often newer developments and likely have a reduced tree canopy that would increase the viewshed (thus increasing total sun hours) of buildings in those areas. </p>
+
+			<p>Based on the analysis, the City of Peterborough can potentially produce 625,839,160 kWh of electricity per year from rooftop solar power. This equates to a reduction of about 25,033.57 tonnes of CO2 per year.</p>
+
+			<p>When large building outliers were removed from the statistical analysis, the maximum rooftop solar potential dropped significantly. This suggests that a small proportion of buildings (less than 1%) are responsible for a large proportion of the city's solar potential. Despite this , buildings in Peterborough do on average have the potential to meet their electricity consumption through rooftop solar power. The average household in Canada consumes about 6,920 kWh per year for base electricity use (Parekh and Wang 2012). The average potential electricity production modeled for rooftops in Peterborough without considering large outlier buildings is 18 MWh (18,000 kWh) per year, more than double the base electricity use for an average household.</p>
+			
+		  	<div class="col-6 pros">
+				<h2 class="line line-half">Usable Solar Radiation</h2>
+				<img src="images/UsableSolarRadMap6.jpg" alt="Usable Solar Radiation Map" width="100%"> 
+			</div>
+			
+			<div class="col-6 cons">			
+				<h2 class="line line-half">Electricity Production</h2>
+				<img src="images/ElecProdMap6.jpg" alt="Usable Solar Radiation Map" width="100%"> 
+			</div>
+			
+		</section>		 
+		 
+		
+		<section class="col-12 bg-color" id="Final">
+			<h2 class="line">Web Application</h2>
+			<p>Our final web app solution was created using Esri's ArcGIS Experience Builder. <a href="https://experience.arcgis.com/experience/346690d2fe47480aabfb9c0a72ef1141">Click here</a> to view the application or use the interactive iframe below.</p>
+			
+			<div class="iframe">
+			<iframe src="https://experience.arcgis.com/experience/346690d2fe47480aabfb9c0a72ef1141" title="Rooftop Solar Potential Web App - Final Solution" width="100%" height="500"></iframe>
+			</div>
+			<h2 class="line gallery">Snapshots of Web App</h2>
+
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="images/ExperienceBuilderMap.jpg">
+				  <img src="images/ExperienceBuilderMap.jpg" alt="Cinque Terre" width="600" height="400">
+				</a>
+				<div class="desc">Add a description of the image here</div>
+			  </div>
+			</div>
+
+
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="images/ExperienceBuilderMap.jpg">
+				  <img src="images/ExperienceBuilderMap.jpg" alt="Forest" width="600" height="400">
+				</a>
+				<div class="desc">Add a description of the image here</div>
+			  </div>
+			</div>
+
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="images/ExperienceBuilderMap.jpg">
+				  <img src="images/ExperienceBuilderMap.jpg" alt="Northern Lights" width="600" height="400">
+				</a>
+				<div class="desc">Add a description of the image here</div>
+			  </div>
+			</div>
+
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="images/ExperienceBuilderMap.jpg">
+				  <img src="images/ExperienceBuilderMap.jpg" alt="Mountains" width="600" height="400">
+				</a>
+				<div class="desc">Add a description of the image here</div>
+			  </div>
+			</div>
+
+			<div class="clearfix"></div>
+
+			<div style="padding:6px;">
+			  <p>These are static images of the web application user interface.</p>
+			</div>
+
+		</section>
+	
+	</div>
+	
+	<footer>
+	 <div>
+	  <p class="footer">Andrea Reid, Marissa Powell, & Samir Imamovic | Fleming College | 2021<p>
+	 </div>
+	</footer>
+	
+
+
+  </body>
+</html>
