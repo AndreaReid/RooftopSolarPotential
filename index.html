@@ -11,10 +11,11 @@
   
 	<div id="mySidebar" class="sidebar">
 	    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="images/ex2.png" alt="close" height="20px" width="20px"></a>
-	    <a href="#Problem">Problem</a>
-	    <a href="#Process">Experience Builder</a>
-	    <a href="#Tips">Tips & Tricks</a>
-	    <a href="#Final">Solution</a>
+	    <a href="#Problem">About</a>
+		<a href="#Team">Team</a>
+	    <a href="#Analysis">Analysis</a>
+	    <a href="#Final">Web App</a>
+	    <a href="#Poster">Poster</a>		
 	</div>
 
 	<div id="main">
@@ -33,9 +34,11 @@
 		  <div class="col-12">
 			<h2 class="line">Welcome to our project website!</h2>
 			<div>
-			<p><b>What's this all about?</b> In collaboration with the City of Peterborough, we built an interactive web map that shows solar potential of building rooftops in Peterborough so that public and private property owners can determine if solar panel installations are a viable solution for their buildings. 
+			<p><b>What's this all about?</b>  In collaboration with the City of Peterborough, we built an interactive web map that shows solar potential of building rooftops in Peterborough so that public and private property owners can determine if solar panel installations are a viable solution for their buildings. 
 			</p>
-			<p><b>Why is this application relevant?</b> This application stands out from other solar potential maps by providing localised estimates of solar radiation produced from high resolution lidar data and local weather patterns and conditions. It is an accessible and easy to use application that will help encourage the use of rooftop solar panels in the city.
+			<p><b>How did we do this?</b>  The solar potential layer was created using Solar Radiation tools in ArcGIS Pro and is based on a high-resolution Digital Surface Model (DSM) created from lidar point data. The web application was developed using Experience Builder - one of Esri's latest configurable apps available through ArcGIS Online - and allows users to find their building on a map and display the solar potential values in a customised pop-up display.
+			</p>
+			<p><b>Why is this application relevant?</b>  This application stands out from other solar potential maps of Peterborough by providing localised estimates of solar radiation produced from high resolution lidar data and local weather patterns and conditions. It is an accessible and easy to use application that will help encourage the use of rooftop solar panels in the city.
 			</p>
 			</div>
 		  </div>
@@ -46,8 +49,8 @@
 		  </div>		  
 		</section>
 		
-		<section id="Tips" class="col-12 bg-color">
-		 <h2 class="line">Meet the Team!</h2>
+		<section id="Team" class="col-12 bg-color">
+		 <h2 class="line">Meet the Team</h2>
 	     <div class="col-12">
 		  <div class="col-6 tips-img ">
 			<img src="images/sam.png" alt="Samir Imamovic" width="300px" height="300px">
@@ -55,6 +58,7 @@
 		  <div class="col-6 tips-txt"> 
 			<h3 class="sections">Samir Imamovic</h3>
 			<p>Sam is a recent graduate of the University of Toronto specializing in ecology and evolutionary biology.  Through his educational experience he has gained skills in data management and analysis and report writing. Additionally, his current enrollment in the Fleming college GIS specialist program has taught him how to perform and display results of analysis on spatial data. </p>
+			<p> E-mail: Samir.Imamovic@flemingcollege.ca </p>
 		  </div>
 		 </div>
 		 <div class="col-12">
@@ -64,6 +68,7 @@
 		  <div class="col-6 tips-txt"> 
 			<h3 class="sections">Marissa Powell</h3>
 			<p>Marissa is a former teacher who specialized in elementary instruction and museum education. She is in the application specialist stream of Fleming College’s GIS program, with a personal interest in imagery analysis. Marissa has a wide area of experience and can adapt and complete a variety of tasks. In her experience with the Fleming College, and her former career, Marissa brings a wealth of information regarding community engagement and GIS knowledge.  </p>
+			<p>E-mail: Marissa.Powell@flemingcollege.ca</p>
 		  </div>
 		 </div>
 		 <div class="col-12">
@@ -73,19 +78,25 @@
 		  <div class="col-6 tips-txt"> 
 			<h3 class="sections">Andrea Reid</h3>
 			<p>Andrea is an ecologist with experience in biodiversity research and conservation genetics. She has spent a lot of time working 'on the ground' in many different environments across three different continents. Now, equipped with a new skillset acquired from the GIS Applications Specialist program at Fleming College, she is excited to be able to use state of the art GIS technology to explore the world from above!</p>
+			<p>E-mail: Andrea.Reid2@flemingcollege.ca</p>
+			<p>Check out Andrea's website <a href="https://andreareid.github.io/resume/" alt="Personal Website">here</a></p>
+			<p>View Andrea's StoryMap <a href="https://storymaps.arcgis.com/stories/b94379eb18d5496588bf363f5aadd018" alt="StoryMap">here</a></p>
 		  </div>		  
 		 </div>
 		</section>
 		
-		<section class="col-12" id="Process">
+		<section class="col-12" id="Analysis">
 			<h2 class="line">Solar Potential Layer</h2>
-			<p>Modeling solar potential of city rooftops with relatively high accuracy was possible due to the availability of high resolution lidar point data provided by the City of Peterborough. The lidar data allowed us to create a detailed Digital Surface Model (DSM) for modeling the influence of rooftop structures and nearby obstructions on the total amount of solar radiation received by a building. </p>
+			<img src="images/poster_methods.png" alt="Methodology" width="100%"> 
+			<p>Modeling solar potential of city rooftops with relatively high accuracy was possible due to the availability of high resolution lidar point data provided by the City of Peterborough. The lidar data allowed us to create a detailed Digital Surface Model (DSM) for modeling the influence of rooftop structures and nearby obstructions on the total amount of solar radiation received by a building. Due to the very high resolution of the DSM (30cm), the processing time of the Area Solar Radiation tool in ArcGIS Pro was increased significantly and it was necessary to split the DSM up into smaller subsections to run simultaneously on three separate computers. Overall, the analysis took close to two weeks to complete.</p>
 			
-			<p>The resulting solar layer is displayed below, symbolised at Usable Solar Radiation and Electricity Production per year. As expected, the large (and often taller), flat-roofed buildings characteristic of the central downtown area show some of the highest potentials. There is also a trend toward higher solar radiation on the periphery neighbourhoods of the city. These neighbourhoods are often newer developments and likely have a reduced tree canopy that would increase the viewshed (thus increasing total sun hours) of buildings in those areas. </p>
+			<img src="images/processingTime_white.png" alt="Processing Time" width="100%" class="ProcessTime"> 
+			
+			<p>The resulting solar layer is displayed below, symbolised as Usable Solar Radiation and Electricity Production per year. The large (and often taller), flat-roofed buildings characteristic of the central downtown area show some of the highest potentials. There is also a trend toward higher solar radiation on the periphery neighbourhoods of the city. These neighbourhoods are often newer developments with a reduced tree canopy. </p>
 
-			<p>Based on the analysis, the City of Peterborough can potentially produce 625,839,160 kWh of electricity per year from rooftop solar power. This equates to a reduction of about 25,033.57 tonnes of CO2 per year.</p>
+			<p>Based on the analysis, the City of Peterborough can potentially produce 625,839,160 kWh of electricity per year from rooftop solar power. This equates to a reduction of about 25,034 tonnes of CO2 per year, which is more than enough to meet the City's Climate Change Strategy to reduce emissions by making current buildings more energy efficient (check out Peterborough's Climate Change Action Plan <a href="https://www.peterborough.ca/en/city-hall/resources/Documents/Chapter-1-City-of-Peterborough-Climate-Action-Plans-FINAL.pdf">here</a>).</p>
 
-			<p>When large building outliers were removed from the statistical analysis, the maximum rooftop solar potential dropped significantly. This suggests that a small proportion of buildings (less than 1%) are responsible for a large proportion of the city's solar potential. Despite this , buildings in Peterborough do on average have the potential to meet their electricity consumption through rooftop solar power. The average household in Canada consumes about 6,920 kWh per year for base electricity use (Parekh and Wang 2012). The average potential electricity production modeled for rooftops in Peterborough without considering large outlier buildings is 18 MWh (18,000 kWh) per year, more than double the base electricity use for an average household.</p>
+			<p>Large buildings are noticeable outliers and produce the highest potentials. When the top 179 buildings with highest solar potential were removed from the analysis, the average rooftop solar potential dropped from 24,000 to 18,000 kWh. Despite this, buildings in Peterborough do on average have the potential to meet their electricity consumption (i.e., 6,920 kWh base electricity use per year; Parekh and Wang 2012) by installing solar panels.</p>
 			
 		  	<div class="col-6 pros">
 				<h2 class="line line-half">Usable Solar Radiation</h2>
@@ -111,50 +122,52 @@
 
 			<div class="responsive">
 			  <div class="gallery">
-				<a target="_blank" href="images/ExperienceBuilderMap.jpg">
-				  <img src="images/ExperienceBuilderMap.jpg" alt="Cinque Terre" width="600" height="400">
+				<a target="_blank" href="images/webappmap_short.jpg">
+				  <img src="images/webappmap_short.jpg" alt="Web App Map page" width="600" height="400">
 				</a>
-				<div class="desc">Add a description of the image here</div>
+				<div class="desc">View of map page.</div>
 			  </div>
 			</div>
 
 
 			<div class="responsive">
 			  <div class="gallery">
-				<a target="_blank" href="images/ExperienceBuilderMap.jpg">
-				  <img src="images/ExperienceBuilderMap.jpg" alt="Forest" width="600" height="400">
+				<a target="_blank" href="images/webappfaq_short.jpg">
+				  <img src="images/webappfaq_short.jpg" alt="Web App FAQs" width="600" height="400">
 				</a>
-				<div class="desc">Add a description of the image here</div>
+				<div class="desc">View FAQ window.</div>
 			  </div>
 			</div>
 
 			<div class="responsive">
 			  <div class="gallery">
-				<a target="_blank" href="images/ExperienceBuilderMap.jpg">
-				  <img src="images/ExperienceBuilderMap.jpg" alt="Northern Lights" width="600" height="400">
+				<a target="_blank" href="images/webappmethods_short.jpg">
+				  <img src="images/webappmethods_short.jpg" alt="Methodology" width="600" height="400">
 				</a>
-				<div class="desc">Add a description of the image here</div>
+				<div class="desc">View of Methodology page.</div>
 			  </div>
 			</div>
 
 			<div class="responsive">
 			  <div class="gallery">
-				<a target="_blank" href="images/ExperienceBuilderMap.jpg">
-				  <img src="images/ExperienceBuilderMap.jpg" alt="Mountains" width="600" height="400">
+				<a target="_blank" href="images/webappabout_short.jpg">
+				  <img src="images/webappabout_short.jpg" alt="About Solar Potential" width="600" height="400">
 				</a>
-				<div class="desc">Add a description of the image here</div>
+				<div class="desc">View of 'About Solar Potential' page.</div>
 			  </div>
 			</div>
 
 			<div class="clearfix"></div>
 
-			<div style="padding:6px;">
-			  <p>These are static images of the web application user interface.</p>
-			</div>
 
 		</section>
 	
 	</div>
+
+		<section class="col-12" id="Poster">
+			<h2 class="line">Cartographic Poster</h2>
+			<p>We created a final poster to help the City of Peterborough disseminate the results of this project to interested members of the public and to policy makers. It will additionally inform property owners of the existence of the new web app available to them. </p>
+			<img src="images/poster.jpg" alt="Poster">
 	
 	<footer>
 	 <div>
@@ -162,7 +175,6 @@
 	 </div>
 	</footer>
 	
-
 
   </body>
 </html>

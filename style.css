@@ -76,6 +76,10 @@ html, body {
   .sidebar a {font-size: 18px;}
 }
 
+/********* For large screens *********/
+
+
+
 /******** Block elements **********/
 
 header {
@@ -198,11 +202,12 @@ div.about {
 
 div.pros {
 	margin-top: 20px;
+	padding-left: 15px;
 }
 
 div.cons {
 	margin-top: 20px;
-	padding-left: 30px;
+	padding-left: 15px;
 }
 
 div.snapshot {
@@ -219,6 +224,11 @@ div.tips-img {
 }
 div.tips-txt {
 	padding-right: 20px;
+}
+
+img.ProcessTime {
+	padding-left: 20%;
+	padding-right: 20%;
 }
 
 /********* SNAPSHOTS *******/
@@ -388,8 +398,6 @@ footer {
   box-sizing: border-box;
 }
 
-/********* For large screens *********/
-
 @media only screen and (min-width: 800px) {
 	
 
@@ -429,7 +437,15 @@ footer {
 	div.tips-txt {
 		padding-right: 0px;
 	}
+	div.cons {
+	padding-left: 0px;
+	}
+	div.pros {
+	padding-right: 0px;
+	}
 }
+
+
 
 @media only screen and (max-width: 1200px) {
 
