@@ -86,26 +86,26 @@ header {
 	display: block;
 	text-align: center;
 	color: black;
-	background-image: url("images/solarpanel1.jpeg");
+	background-image: url("images/rooftopsolar1.JPG");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	margin: 0px;
 	padding: 0px;
-    padding-bottom: 40px;
+    	padding-bottom: 40px;
 	width: 100%;
 	min-height: 500px;
 	max-height: 100px;
 }
 
 div.header {	
-	display: block;
+    display: block;
     width: 100%;
     margin-left: 0;
     max-height: 100px;
     padding-top: 10px;
     padding-bottom: 10px;
-	background-color: #ffa503a6;
+    background-color: ##ffa503;
 }
 
 h1 {
